@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BPViewsSubviewsInOutAnimation_Example' do
+  pod 'BPViewsSubviewsInOutAnimation', :path => '../'
+
+  target 'BPViewsSubviewsInOutAnimation_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
