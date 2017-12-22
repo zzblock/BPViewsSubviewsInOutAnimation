@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIView {
+extension UIView {
     
     static let screenWidth = UIScreen.main.bounds.width
     
@@ -29,7 +29,7 @@ public extension UIView {
     }
     
     @IBInspectable
-    var BPDelay: Int {
+    open var BPDelay: Int {
         get {
             return self.delay
         }
@@ -40,7 +40,7 @@ public extension UIView {
     
     //MARK:- Animation methods
     
-    func animateHalfWayTowardsLeft(isAnimated: Bool = true, completionHandler: @escaping () -> Void = {}) {
+    open func animateHalfWayTowardsLeft(isAnimated: Bool = true, completionHandler: @escaping () -> Void = {}) {
         
         var animationCompleted: Int = 0
         var animationCounter: Int = 0
@@ -88,7 +88,7 @@ public extension UIView {
         
     }
     
-    func animateHalfWayTowardsRight(isAnimated: Bool = true, completionHandler: @escaping () -> Void = {}) {
+    open func animateHalfWayTowardsRight(isAnimated: Bool = true, completionHandler: @escaping () -> Void = {}) {
         
         var animationCompleted: Int = 0
         var animationCounter: Int = 0
@@ -100,7 +100,6 @@ public extension UIView {
             if view.BPDelay == NSNotFound {
                 continue
             } else {
-                print("Found\n\n")
                 
                 animationCounter = animationCounter + 1
                 

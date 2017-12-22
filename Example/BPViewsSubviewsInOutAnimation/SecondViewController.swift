@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BPViewsSubviewsInOutAnimation
 
 class SecondViewController: BPViewController {
 

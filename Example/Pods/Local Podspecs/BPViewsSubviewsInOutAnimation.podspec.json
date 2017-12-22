@@ -1,19 +1,19 @@
 {
   "name": "BPViewsSubviewsInOutAnimation",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "summary": "BPViewsSubviewsInOutAnimation lets any view animate all its subviews with inout transition.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/NavneetSinghGill/BPViewsSubviewsInOutAnimation",
+  "description": "BPViewsSubviewsInOutAnimation lets any view animate all its subviews with inout transition. Its very handy to control the order and delays of animation. Simply just set a variable named 'BPDelay' in inspector window under any view.",
+  "homepage": "https://github.com/zoebhsheikh/BPViewsSubviewsInOutAnimation",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "NavneetSinghGill": "navneet105gill@gmail.com"
+    "Zoeb": "zoeb.sheikh74@gmail.com"
   },
   "source": {
-    "git": "https://github.com/NavneetSinghGill/BPViewsSubviewsInOutAnimation.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/zoebhsheikh/BPViewsSubviewsInOutAnimation.git",
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "8.0"

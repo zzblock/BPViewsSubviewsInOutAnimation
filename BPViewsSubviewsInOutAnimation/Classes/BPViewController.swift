@@ -8,17 +8,17 @@
 
 import UIKit
 
-public class BPViewController: UIViewController {
+open class BPViewController: UIViewController {
 
     private var didAnimateOnce : Bool = false
      
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    override public func viewWillAppear(_ animated: Bool) {
+    override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         
@@ -35,7 +35,7 @@ public class BPViewController: UIViewController {
     
     //MARK:- Animation view methods
     
-    func bpPresent(viewController: UIViewController) {
+    open func bpPresent(viewController: UIViewController) {
         self.view.animateHalfWayTowardsLeft {
             DispatchQueue.main.async {
                 self.present(viewController, animated: true, completion: nil)
@@ -44,7 +44,7 @@ public class BPViewController: UIViewController {
         }
     }
     
-    func bpDismissViewController() {
+    open func bpDismissViewController() {
         self.view.animateHalfWayTowardsRight {
             DispatchQueue.main.async {
                 self.dismiss(animated: true, completion: nil)
@@ -53,7 +53,7 @@ public class BPViewController: UIViewController {
         }
     }
     
-    func bpPush(viewController: UIViewController) {
+    open func bpPush(viewController: UIViewController) {
         self.view.animateHalfWayTowardsLeft {
             DispatchQueue.main.async {
                 if self.navigationController != nil {
@@ -63,7 +63,7 @@ public class BPViewController: UIViewController {
         }
     }
     
-    func bpPopViewController() {
+    open func bpPopViewController() {
         self.view.animateHalfWayTowardsRight {
             DispatchQueue.main.async {
                 if self.navigationController != nil {
