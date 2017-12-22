@@ -1,0 +1,6 @@
+framework module Pods_BPViewsSubviewsInOutAnimation_Tests {
+  umbrella header "Pods-BPViewsSubviewsInOutAnimation_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

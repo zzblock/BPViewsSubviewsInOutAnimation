@@ -1,0 +1,6 @@
+framework module BPViewsSubviewsInOutAnimation {
+  umbrella header "BPViewsSubviewsInOutAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BPViewsSubviewsInOutAnimation'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of BPViewsSubviewsInOutAnimation.'
+  s.version          = '1.0.0'
+  s.summary          = 'BPViewsSubviewsInOutAnimation lets any view animate all its subviews with inout transition.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,15 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+BPViewsSubviewsInOutAnimation lets any view animate all its subviews with inout transition. Its very handy to control the order and delays of animation. Simply just set a variable named 'BPDelay' in inspector window under any view.
                        DESC
 
-  s.homepage         = 'https://github.com/NavneetSinghGill/BPViewsSubviewsInOutAnimation'
+  s.homepage         = 'https://github.com/zoebhsheikh/BPViewsSubviewsInOutAnimation'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'NavneetSinghGill' => 'navneet105gill@gmail.com' }
-  s.source           = { :git => 'https://github.com/NavneetSinghGill/BPViewsSubviewsInOutAnimation.git', :tag => s.version.to_s }
+  s.author           = { 'Zoeb' => 'zoeb.sheikh74@gmail.com' }
+  s.source           = { :git => 'https://github.com/zoebhsheikh/BPViewsSubviewsInOutAnimation.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
+#s.name = {"name"=>["Zoeb"]}
 
   s.ios.deployment_target = '8.0'
 
