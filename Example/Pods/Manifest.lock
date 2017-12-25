@@ -1,5 +1,5 @@
 PODS:
-  - BPViewsSubviewsInOutAnimation (1.0.1)
+  - BPViewsSubviewsInOutAnimation (1.0.2)
 
 DEPENDENCIES:
   - BPViewsSubviewsInOutAnimation (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BPViewsSubviewsInOutAnimation: 515d9f5d83628a9deee5164d4ef82603142f8e59
+  BPViewsSubviewsInOutAnimation: 40276a5ba812c6d60850339cfd5cf273d898c9f7
 
 PODFILE CHECKSUM: eef817f4d0477eb399ac6169339c5d28f6a2ccfe
 

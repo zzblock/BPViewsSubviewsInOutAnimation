@@ -35,39 +35,39 @@ open class BPViewController: UIViewController {
     
     //MARK:- Animation view methods
     
-    open func bpPresent(viewController: UIViewController) {
+    open func bpPresent(viewController: UIViewController, animated: Bool = false) {
         self.view.animateHalfWayTowardsLeft {
             DispatchQueue.main.async {
-                self.present(viewController, animated: true, completion: nil)
+                self.present(viewController, animated: animated, completion: nil)
             }
             
         }
     }
     
-    open func bpDismissViewController() {
+    open func bpDismissViewController(animated: Bool = false) {
         self.view.animateHalfWayTowardsRight {
             DispatchQueue.main.async {
-                self.dismiss(animated: true, completion: nil)
+                self.dismiss(animated: animated, completion: nil)
             }
             
         }
     }
     
-    open func bpPush(viewController: UIViewController) {
+    open func bpPush(viewController: UIViewController, animated: Bool = false) {
         self.view.animateHalfWayTowardsLeft {
             DispatchQueue.main.async {
                 if self.navigationController != nil {
-                    self.navigationController?.pushViewController(viewController, animated: true)
+                    self.navigationController?.pushViewController(viewController, animated: animated)
                 }
             }
         }
     }
     
-    open func bpPopViewController() {
+    open func bpPopViewController(animated: Bool = false) {
         self.view.animateHalfWayTowardsRight {
             DispatchQueue.main.async {
                 if self.navigationController != nil {
-                    self.navigationController?.popViewController(animated: true)
+                    self.navigationController?.popViewController(animated: animated)
                 }
             }
         }

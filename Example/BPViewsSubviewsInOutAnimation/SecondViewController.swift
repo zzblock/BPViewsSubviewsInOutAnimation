@@ -22,7 +22,7 @@ class SecondViewController: BPViewController {
     
     @IBAction func push() {
         let thirdVC = self.storyboard?.instantiateViewController(withIdentifier: "ThirdViewController")
-        self.bpPush(viewController: thirdVC!)
+        self.bpPush(viewController: thirdVC!,animated: true)
     }
 
 }

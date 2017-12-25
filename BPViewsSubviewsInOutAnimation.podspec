@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BPViewsSubviewsInOutAnimation'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'BPViewsSubviewsInOutAnimation lets any view animate all its subviews with inout transition.'
 
 # This description is used to generate tags and improve search results.
@@ -27,8 +27,6 @@ BPViewsSubviewsInOutAnimation lets any view animate all its subviews with inout 
   s.author           = { 'Zoeb' => 'zoeb.sheikh74@gmail.com' }
   s.source           = { :git => 'https://github.com/zoebhsheikh/BPViewsSubviewsInOutAnimation.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-#s.name = {"name"=>["Zoeb"]}
 
   s.ios.deployment_target = '8.0'
 
