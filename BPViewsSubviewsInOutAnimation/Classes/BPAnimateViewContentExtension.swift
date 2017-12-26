@@ -10,21 +10,40 @@ import UIKit
 
 extension UIView {
     
+    enum Position {
+        case Right
+        case Left
+        case Center
+    }
+    
     static let screenWidth = UIScreen.main.bounds.width
     
-    private struct AnimationKeys {
+    private struct VarKeys {
         static var delayKey: UInt8 = 0
+        static var positionKey: UInt8 = 1
+    }
+    
+    private var currentPosition: Position {
+        get {
+            guard let value = objc_getAssociatedObject(self, &VarKeys.positionKey) as? Position else {
+                return .Center
+            }
+            return value
+        }
+        set(newValue) {
+            objc_setAssociatedObject(self, &VarKeys.positionKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
     }
     
     private var delay: Int {
         get {
-            guard let value = objc_getAssociatedObject(self, &AnimationKeys.delayKey) as? Int else {
+            guard let value = objc_getAssociatedObject(self, &VarKeys.delayKey) as? Int else {
                 return NSNotFound
             }
             return value
         }
         set(newValue) {
-            objc_setAssociatedObject(self, &AnimationKeys.delayKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            objc_setAssociatedObject(self, &VarKeys.delayKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
     
@@ -41,6 +60,14 @@ extension UIView {
     //MARK:- Animation methods
     
     open func animateHalfWayTowardsLeft(isAnimated: Bool = true, completionHandler: @escaping () -> Void = {}) {
+        switch currentPosition {
+        case .Left:
+            return
+        case .Center:
+            currentPosition = .Left
+        case .Right:
+            currentPosition = .Center
+        }
         
         var animationCompleted: Int = 0
         var animationCounter: Int = 0
@@ -89,6 +116,14 @@ extension UIView {
     }
     
     open func animateHalfWayTowardsRight(isAnimated: Bool = true, completionHandler: @escaping () -> Void = {}) {
+        switch currentPosition {
+        case .Right:
+            return
+        case .Center:
+            currentPosition = .Right
+        case .Left:
+            currentPosition = .Center
+        }
         
         var animationCompleted: Int = 0
         var animationCounter: Int = 0
@@ -128,6 +163,24 @@ extension UIView {
                 
             }
             
+        }
+    }
+    
+    open func animateTowardsCenterFromLeft(completionHandler: @escaping () -> Void = {}) {
+        self.animateHalfWayTowardsLeft(isAnimated: false)
+        self.animateHalfWayTowardsLeft(isAnimated: false)
+        
+        self.animateHalfWayTowardsRight {
+            completionHandler()
+        }
+    }
+    
+    open func animateTowardsCenterFromRight(completionHandler: @escaping () -> Void = {}) {
+        self.animateHalfWayTowardsRight(isAnimated: false)
+        self.animateHalfWayTowardsRight(isAnimated: false)
+        
+        self.animateHalfWayTowardsLeft {
+            completionHandler()
         }
     }
     

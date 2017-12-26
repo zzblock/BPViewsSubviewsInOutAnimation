@@ -20,7 +20,7 @@
         <!--First View Controller-->
         <scene sceneID="Bsb-CA-I4D">
             <objects>
-                <viewController storyboardIdentifier="FirstViewController" id="eIW-S0-Rxy" customClass="FirstViewController" customModule="ViewAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" id="eIW-S0-Rxy" customClass="FirstViewController" customModule="BPViewsSubviewsInOutAnimation_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MWG-KV-H71"/>
                         <viewControllerLayoutGuide type="bottom" id="RxV-Sa-jQF"/>
@@ -83,7 +83,7 @@
                                 <rect key="frame" x="15" y="464" width="345" height="35"/>
                                 <color key="backgroundColor" red="0.0" green="0.43137254899999999" blue="0.74509803919999995" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="Next"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="3"/>
@@ -96,31 +96,17 @@
                                     <action selector="loginTapped" destination="eIW-S0-Rxy" eventType="touchUpInside" id="Fj8-9e-Gym"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deviceNotification" translatesAutoresizingMaskIntoConstraints="NO" id="R45-d3-FDC">
-                                <rect key="frame" x="162" y="114" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="WMj-fo-K0K"/>
-                                    <constraint firstAttribute="height" constant="50" id="ePX-nd-DHh"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="BPDelay">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="enB-xO-xaM" firstAttribute="leading" secondItem="9c4-Dd-PIo" secondAttribute="leading" id="3z5-X6-jJf"/>
                             <constraint firstItem="9c4-Dd-PIo" firstAttribute="top" secondItem="MWG-KV-H71" secondAttribute="bottom" constant="150" id="4xL-Uf-iIU"/>
-                            <constraint firstItem="R45-d3-FDC" firstAttribute="centerX" secondItem="fMQ-1z-3qU" secondAttribute="centerX" id="D3h-3G-vUy"/>
                             <constraint firstItem="yYz-AU-fWn" firstAttribute="leading" secondItem="9c4-Dd-PIo" secondAttribute="leading" id="Gn9-sM-Gaf"/>
                             <constraint firstAttribute="trailing" secondItem="9c4-Dd-PIo" secondAttribute="trailing" constant="15" id="IRp-YX-YOm"/>
                             <constraint firstItem="QBu-9i-Zpr" firstAttribute="width" secondItem="yYz-AU-fWn" secondAttribute="width" id="Jss-jc-XaN"/>
                             <constraint firstItem="yYz-AU-fWn" firstAttribute="width" secondItem="Vzh-IX-ZR9" secondAttribute="width" id="LOB-46-SOa"/>
                             <constraint firstAttribute="trailing" secondItem="enB-xO-xaM" secondAttribute="trailing" constant="15" id="NlF-K4-a7n"/>
                             <constraint firstItem="Vzh-IX-ZR9" firstAttribute="leading" secondItem="9c4-Dd-PIo" secondAttribute="leading" id="OkA-m8-kRz"/>
-                            <constraint firstItem="R45-d3-FDC" firstAttribute="top" secondItem="MWG-KV-H71" secondAttribute="bottom" constant="50" id="PbY-bN-1Go"/>
                             <constraint firstItem="QBu-9i-Zpr" firstAttribute="top" secondItem="yYz-AU-fWn" secondAttribute="bottom" constant="100" id="Pc8-qn-0XL"/>
                             <constraint firstItem="yYz-AU-fWn" firstAttribute="top" secondItem="enB-xO-xaM" secondAttribute="bottom" constant="15" id="QZh-me-0Tm"/>
                             <constraint firstItem="enB-xO-xaM" firstAttribute="top" secondItem="Vzh-IX-ZR9" secondAttribute="bottom" constant="20" id="Z8f-5X-zni"/>
@@ -140,7 +126,7 @@
         <!--Third View Controller-->
         <scene sceneID="h5L-SI-gsr">
             <objects>
-                <viewController storyboardIdentifier="ThirdViewController" id="q1F-Wx-ACl" customClass="ThirdViewController" customModule="ViewAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ThirdViewController" id="q1F-Wx-ACl" customClass="ThirdViewController" customModule="BPViewsSubviewsInOutAnimation_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wMb-Vm-VcN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,7 +153,7 @@
         <!--Second View Controller-->
         <scene sceneID="uny-Fr-DWI">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="m5x-GY-L1K" customClass="SecondViewController" customModule="ViewAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="m5x-GY-L1K" customClass="SecondViewController" customModule="BPViewsSubviewsInOutAnimation_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YYB-nf-mTm"/>
                         <viewControllerLayoutGuide type="bottom" id="Y8Z-E3-Afg"/>
@@ -309,7 +295,4 @@
             <point key="canvasLocation" x="-719" y="75"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="deviceNotification" width="16" height="16"/>
-    </resources>
 </document>

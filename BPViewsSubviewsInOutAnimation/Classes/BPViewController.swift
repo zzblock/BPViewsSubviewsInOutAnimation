@@ -11,7 +11,7 @@ import UIKit
 open class BPViewController: UIViewController {
 
     private var didAnimateOnce : Bool = false
-     
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,13 +23,10 @@ open class BPViewController: UIViewController {
         
         
         if !didAnimateOnce {
-            self.view.animateHalfWayTowardsRight(isAnimated: false)
-            self.view.animateHalfWayTowardsLeft()
-            
+            self.view.animateTowardsCenterFromLeft()
             didAnimateOnce = true
         } else {
-            
-            self.view.animateHalfWayTowardsRight()
+            self.view.animateTowardsCenterFromRight()
         }
     }
     
@@ -40,7 +37,6 @@ open class BPViewController: UIViewController {
             DispatchQueue.main.async {
                 self.present(viewController, animated: animated, completion: nil)
             }
-            
         }
     }
     
