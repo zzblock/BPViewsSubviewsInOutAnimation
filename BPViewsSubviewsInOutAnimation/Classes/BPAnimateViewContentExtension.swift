@@ -166,7 +166,7 @@ extension UIView {
         }
     }
     
-    open func animateTowardsCenterFromLeft(completionHandler: @escaping () -> Void = {}) {
+    open func animateToCenterFromLeft(completionHandler: @escaping () -> Void = {}) {
         self.animateHalfWayTowardsLeft(isAnimated: false)
         self.animateHalfWayTowardsLeft(isAnimated: false)
         
@@ -175,7 +175,7 @@ extension UIView {
         }
     }
     
-    open func animateTowardsCenterFromRight(completionHandler: @escaping () -> Void = {}) {
+    open func animateToCenterFromRight(completionHandler: @escaping () -> Void = {}) {
         self.animateHalfWayTowardsRight(isAnimated: false)
         self.animateHalfWayTowardsRight(isAnimated: false)
         

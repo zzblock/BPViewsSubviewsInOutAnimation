@@ -99,14 +99,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		53C888511FECE97C001FF531 /* LibFiles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = LibFiles;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +128,6 @@
 				53C8884E1FECE972001FF531 /* FirstViewController.swift */,
 				53C8884F1FECE972001FF531 /* SecondViewController.swift */,
 				53C888501FECE973001FF531 /* ThirdViewController.swift */,
-				53C888511FECE97C001FF531 /* LibFiles */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,

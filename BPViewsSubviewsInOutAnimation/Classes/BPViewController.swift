@@ -23,10 +23,10 @@ open class BPViewController: UIViewController {
         
         
         if !didAnimateOnce {
-            self.view.animateTowardsCenterFromLeft()
+            self.view.animateToCenterFromRight()
             didAnimateOnce = true
         } else {
-            self.view.animateTowardsCenterFromRight()
+            self.view.animateToCenterFromLeft()
         }
     }
     
