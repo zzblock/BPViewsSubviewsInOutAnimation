@@ -1,7 +1,4 @@
 //
-//  SecondViewController.swift
-//  ViewAnimation
-//
 //  Created by Navneet on 12/21/17.
 //  Copyright © 2017 Navneet. All rights reserved.
 //

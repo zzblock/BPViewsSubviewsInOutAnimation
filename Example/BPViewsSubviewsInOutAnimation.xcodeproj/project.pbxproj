@@ -12,8 +12,8 @@
 		53C888551FECEBDE001FF531 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C888501FECE973001FF531 /* ThirdViewController.swift */; };
 		53C888561FECEBDE001FF531 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C8884E1FECE972001FF531 /* FirstViewController.swift */; };
 		53C888631FECFC74001FF531 /* BPViewsSubviewsInOutAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C888641FECFC74001FF531 /* BPViewsSubviewsInOutAnimation.framework */; };
+		53D30FF51FF611B2003D2B28 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D30FF41FF611B2003D2B28 /* ViewControllerExtension.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -39,10 +39,10 @@
 		53C8884F1FECE972001FF531 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		53C888501FECE973001FF531 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		53C888641FECFC74001FF531 /* BPViewsSubviewsInOutAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BPViewsSubviewsInOutAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53D30FF41FF611B2003D2B28 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* BPViewsSubviewsInOutAnimation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPViewsSubviewsInOutAnimation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -124,10 +124,10 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				53C8884E1FECE972001FF531 /* FirstViewController.swift */,
 				53C8884F1FECE972001FF531 /* SecondViewController.swift */,
 				53C888501FECE973001FF531 /* ThirdViewController.swift */,
+				53D30FF41FF611B2003D2B28 /* ViewControllerExtension.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -385,7 +385,7 @@
 			files = (
 				53C888561FECEBDE001FF531 /* FirstViewController.swift in Sources */,
 				53C888541FECEBDE001FF531 /* SecondViewController.swift in Sources */,
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				53D30FF51FF611B2003D2B28 /* ViewControllerExtension.swift in Sources */,
 				53C888551FECEBDE001FF531 /* ThirdViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

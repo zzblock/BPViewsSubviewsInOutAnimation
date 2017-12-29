@@ -35,8 +35,9 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                 <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animateAxisOnVerticalAndOffHorizontal" value="NO"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="BPDelay">
-                                        <real key="value" value="2"/>
+                                        <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -50,7 +51,7 @@
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="BPDelay">
-                                        <real key="value" value="2"/>
+                                        <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -61,7 +62,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="BPDelay">
-                                        <real key="value" value="3"/>
+                                        <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -75,7 +76,7 @@
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="BPDelay">
-                                        <real key="value" value="3"/>
+                                        <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -88,6 +89,8 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animateAxisOnVerticalAndOffHorizontal" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="BPAnimateAxisOnVerticalAndOffHorizontal" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="BPDelay">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
@@ -169,7 +172,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="BPDelay">
-                                        <integer key="value" value="4"/>
+                                        <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -183,7 +186,7 @@
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="BPDelay">
-                                        <integer key="value" value="4"/>
+                                        <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -194,7 +197,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="BPDelay">
-                                        <real key="value" value="3"/>
+                                        <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -208,7 +211,7 @@
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="BPDelay">
-                                        <real key="value" value="3"/>
+                                        <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
@@ -224,6 +227,8 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="BPDelay">
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animateAxisOnVerticalAndOffHorizontal" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="BPAnimateAxisOnVerticalAndOffHorizontal" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="push" destination="m5x-GY-L1K" eventType="touchUpInside" id="m0v-SH-5di"/>
@@ -239,8 +244,10 @@
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="BPDelay">
-                                        <integer key="value" value="1"/>
+                                        <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animateAxisOnVerticalAndOffHorizontal" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="BPAnimateAxisOnVerticalAndOffHorizontal" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="dismiss" destination="m5x-GY-L1K" eventType="touchUpInside" id="OO0-nd-wIb"/>

@@ -1,7 +1,4 @@
 //
-//  AppDelegate.swift
-//  BPViewsSubviewsInOutAnimation
-//
 //  Created by NavneetSinghGill on 12/22/2017.
 //  Copyright (c) 2017 NavneetSinghGill. All rights reserved.
 //

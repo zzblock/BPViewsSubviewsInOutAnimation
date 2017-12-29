@@ -9,7 +9,10 @@
 import UIKit
 
 open class BPViewController: UIViewController {
-
+    
+    open var bpEntryAnimationDirections: Array<UIView.BpPosition>?
+    open var bpExitAnimationDirections: Array<UIView.BpPosition>?
+    
     private var didAnimateOnce : Bool = false
     
     override open func viewDidLoad() {
@@ -21,50 +24,50 @@ open class BPViewController: UIViewController {
     override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        
         if !didAnimateOnce {
-            self.view.animateToCenterFromRight()
+            let entryDirections = bpEntryAnimationDirections ?? [.Right, .Bottom]
+            self.view.animateSubViewsAwayFromCenter(towards: entryDirections, isAnimated: false, completionHandler: {
+                self.view.animateSubViewsToCenter(directions: entryDirections)
+            })
             didAnimateOnce = true
         } else {
-            self.view.animateToCenterFromLeft()
+            let entryDirections = bpEntryAnimationDirections ?? [.Left, .Bottom]
+            self.view.animateSubViewsAwayFromCenter(towards: entryDirections, isAnimated: false, completionHandler: {
+                self.view.animateSubViewsToCenter(directions: entryDirections)
+            })
         }
     }
     
     //MARK:- Animation view methods
     
-    open func bpPresent(viewController: UIViewController, animated: Bool = false) {
-        self.view.animateHalfWayTowardsLeft {
+    open func bpPresent(viewController: UIViewController, with directions: Array<UIView.BpPosition>? = nil, animated: Bool = false) {
+        self.view.animateSubViewsAwayFromCenter(towards: (directions ?? self.bpExitAnimationDirections) ?? [.Left, .Bottom]) {
             DispatchQueue.main.async {
                 self.present(viewController, animated: animated, completion: nil)
             }
         }
     }
     
-    open func bpDismissViewController(animated: Bool = false) {
-        self.view.animateHalfWayTowardsRight {
+    open func bpDismissViewController(animated: Bool = false, with directions: Array<UIView.BpPosition>? = nil) {
+        self.view.animateSubViewsAwayFromCenter(towards: (directions ?? self.bpExitAnimationDirections) ?? [.Left, .Bottom]) {
             DispatchQueue.main.async {
                 self.dismiss(animated: animated, completion: nil)
             }
-            
         }
     }
     
-    open func bpPush(viewController: UIViewController, animated: Bool = false) {
-        self.view.animateHalfWayTowardsLeft {
+    open func bpPush(viewController: UIViewController, with directions: Array<UIView.BpPosition>? = nil, animated: Bool = false) {
+        self.view.animateSubViewsAwayFromCenter(towards: (directions ?? self.bpExitAnimationDirections) ?? [.Left, .Bottom]) {
             DispatchQueue.main.async {
-                if self.navigationController != nil {
-                    self.navigationController?.pushViewController(viewController, animated: animated)
-                }
+                self.navigationController?.pushViewController(viewController, animated: animated)
             }
         }
     }
     
-    open func bpPopViewController(animated: Bool = false) {
-        self.view.animateHalfWayTowardsRight {
+    open func bpPopViewController(animated: Bool = false, with directions: Array<UIView.BpPosition>? = nil) {
+        self.view.animateSubViewsAwayFromCenter(towards: (directions ?? self.bpExitAnimationDirections) ?? [.Left, .Bottom]) {
             DispatchQueue.main.async {
-                if self.navigationController != nil {
-                    self.navigationController?.popViewController(animated: animated)
-                }
+                self.navigationController?.popViewController(animated: animated)
             }
         }
     }

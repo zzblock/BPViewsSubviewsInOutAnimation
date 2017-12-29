@@ -1,7 +1,4 @@
 //
-//  ViewController.swift
-//  ViewAnimation
-//
 //  Created by Navneet on 12/21/17.
 //  Copyright © 2017 Navneet. All rights reserved.
 //
@@ -14,6 +11,8 @@ class FirstViewController: BPViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.bpEntryAnimationDirections = [.Top, .Left]
+        self.bpExitAnimationDirections = [.Top, .Left]
     }
     
     @IBAction func loginTapped() {
